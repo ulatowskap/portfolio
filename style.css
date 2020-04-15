@@ -639,7 +639,7 @@ hr {
   opacity: 0;
 }
 
-.responsive img {
+.sass {
   width: 70px;
   height: 60px;
   opacity: 0.6;
