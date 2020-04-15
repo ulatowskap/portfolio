@@ -1933,6 +1933,14 @@ h3 {
     left: 50%;
     top: 95%;
   }
+  
+  .fa-node-js{
+    color: #88C349;
+  }
+  
+  .fa-vuejs{
+    color: #3EB37F
+  }
 
   .html5 {
     width: 50px;
