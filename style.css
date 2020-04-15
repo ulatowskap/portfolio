@@ -1,0 +1,2007 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.skillsshow {
+  display: block;
+}
+
+/*sidebar - menu - desktop*/
+
+.hamburger-menu {
+  display: none;
+}
+
+.mobilebr {
+  display: none;
+}
+
+.sidebar {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  width: 60px;
+  background-color: black;
+  z-index: 100;
+  color: rgb(17, 17, 17);
+}
+
+.navdesktop {
+  display: block;
+  height: 100vh;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.sidebar .navdesktop ul {
+  list-style: none;
+}
+
+.sidebar .navdesktop ul li {
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.active {
+  color: rgb(151, 104, 196);
+}
+
+li:nth-last-of-type(1) {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+li:nth-last-of-type(2) {
+  padding-top: 100px;
+  font-size: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(83, 79, 79);
+  display: block;
+  position: relative;
+  margin-top: 38px;
+  padding-bottom: -10px;
+}
+
+nav i {
+  text-align: center;
+  opacity: 1;
+  transition: ease-out 0.2s;
+  display: block;
+  font-size: 20px;
+}
+
+span {
+  display: block;
+  position: absolute;
+  top: -12px;
+  font-size: 9px;
+  margin-top: 20px;
+  right: -4px;
+  color: rgb(151, 104, 196);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  display: none;
+  transition: 0.4s;
+}
+
+.projects-span {
+  right: -13px;
+}
+
+.contact-span {
+  right: -10px;
+}
+
+.github-span {
+  right: -7px;
+  top: -18px;
+}
+
+.linkedin-span {
+  right: -13px;
+  top: -15px;
+}
+
+i:hover + span {
+  display: block;
+}
+
+nav i:hover {
+  opacity: 0;
+  color: rgb(151, 104, 196);
+}
+
+/*main page - HOME*/
+
+.mainpage {
+  background-color: #1a1a1a;
+  opacity: 0.9;
+  height: 100vh;
+  position: relative;
+}
+
+#particles-js {
+  width: 100%;
+  height: 90%;
+}
+
+.mainphoto {
+  width: 700px;
+  opacity: 0.4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.mainpage h1 {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  font-size: 40px;
+}
+
+.mainpage h4 {
+  font-family: "Lexend Deca", sans-serif;
+  position: absolute;
+  top: 54%;
+  left: 8%;
+  color: rgb(83, 79, 79);
+  font-size: 15px;
+  animation-delay: 2s;
+}
+
+.btn {
+  position: absolute;
+  top: 63%;
+  left: 8%;
+  color: rgb(151, 104, 196);
+  background: none;
+  border: 1px solid rgb(151, 104, 196);
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 3px;
+  border-radius: 5%;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgb(151, 104, 196);
+}
+
+.btn-contact:hover {
+  color: black;
+}
+
+.btn-contact {
+  text-decoration: none;
+  display: block;
+  color: rgb(151, 104, 196);
+}
+
+/*mainpage -> about*/
+
+.mainpage .h1-about {
+  color: rgb(151, 104, 196);
+  font-size: 50px;
+  margin-top: -5%;
+}
+
+.mainpage p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  width: 36%;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  text-align: justify;
+  column-count: 1;
+}
+
+/*BOOK PAGES*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.book-cover img {
+  max-width: 0px;
+  height: 450px;
+}
+
+.container {
+  display: block;
+  overflow: hidden;
+  margin-top: 3%;
+  position: absolute;
+  top: 16%;
+  left: 55%;
+  opacity: 0.8;
+}
+
+.book-wrapper {
+  position: relative;
+  margin: 2% auto;
+  width: 670px;
+  cursor: pointer;
+}
+
+.pages-container {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  right: 0;
+  bottom: 0;
+  width: 91.5%;
+  height: 90%;
+}
+
+.pages [class^="page-num-"] {
+  background-image: url("img/paper.jpg");
+  background-size: auto 100%;
+  position: relative;
+}
+
+.bgc-cover {
+  background-size: auto 100%;
+  position: relative;
+  background-image: url(img/cover.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pages-content {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: table;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10%;
+}
+
+.content-inner {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text {
+  font-size: 15px;
+  color: rgb(20, 20, 20);
+  width: 90%;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+}
+
+.text .booktext {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgb(16, 16, 17);
+  width: 40%;
+  text-align: center;
+  margin-top: 2px;
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  left: 42%;
+  top: 44%;
+  column-count: 1;
+  column-gap: 0;
+}
+
+.bookimg {
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5%;
+  transition: 0.5s;
+}
+
+.bookimg:hover {
+  width: 100%;
+  height: 220px;
+}
+
+.text a {
+  text-decoration: none;
+  color: rgb(23, 22, 24);
+  transition: 0.5s;
+  margin-bottom: 25%;
+  display: block;
+  text-align: center;
+}
+
+.text a:hover {
+  font-size: 20px;
+}
+
+.look {
+  display: block;
+  position: absolute;
+  color: white;
+  right: 12%;
+  top: 20%;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
+
+.look .fa-arrow-down {
+  padding-left: 100px;
+  padding-top: 5px;
+  animation: bounce 2s infinite;
+}
+
+/*main - projects*/
+
+.wrapper-projects {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4%;
+  padding-top: 4%;
+  justify-content: space-around;
+}
+
+.container-project {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease;
+  margin: 75px;
+}
+
+.project {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border: 1px solid rgb(122, 99, 99);
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-project:hover .project {
+  opacity: 0.3;
+}
+
+.container-project:hover .middle {
+  opacity: 1;
+}
+
+.textproject {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgb(53, 51, 54);
+  font-size: 16px;
+  padding: 16px 32px;
+  letter-spacing: 3px;
+}
+
+.aproject {
+  display: block;
+  text-decoration: none;
+  color: rgb(151, 104, 196);
+  background: none;
+  border: 1px solid rgb(151, 104, 196);
+  padding: 8px 20px;
+  border-radius: 5%;
+}
+
+h5 {
+  font-size: 15px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+/*brain mainpage skills*/
+
+h6 {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 4px;
+}
+
+hr {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.brain {
+  display: block;
+  position: relative;
+  height: 600px;
+  width: 900px;
+  left: calc(50% - 250px);
+  top: calc(50% - 300px);
+}
+
+.brain1 {
+  display: block;
+  position: absolute;
+  left: 8%;
+  top: 0.35%;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.brain1a {
+  display: block;
+  position: absolute;
+  left: 8%;
+  top: 0.35%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brain1:hover {
+  opacity: 0;
+}
+
+.brain1:hover ~ .operations {
+  opacity: 1;
+}
+
+.operations {
+  position: absolute;
+  font-size: 80px;
+  color: white;
+  left: -15%;
+  top: -15%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.brain2:hover ~ .soft-skills {
+  opacity: 1;
+}
+
+.brain2 {
+  display: block;
+  position: absolute;
+  left: 32%;
+  top: 2%;
+  z-index: 2;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.brain2a {
+  display: block;
+  position: absolute;
+  left: 32%;
+  top: 2%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brain2:hover {
+  opacity: 0;
+}
+
+.soft-skills {
+  position: absolute;
+  font-size: 20px;
+  width: 200px;
+  height: 250px;
+  color: white;
+  text-align: center;
+  right: 5%;
+  top: -10%;
+  opacity: 0;
+  transition: 0.4s;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.brain3 {
+  display: block;
+  position: absolute;
+  left: 16%;
+  top: 31%;
+  z-index: 2;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.brain3a {
+  display: block;
+  position: absolute;
+  left: 16%;
+  top: 31%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brain3:hover {
+  opacity: 0;
+}
+
+.brain3:hover ~ .learn {
+  opacity: 1;
+}
+
+.learn {
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  bottom: 30%;
+  left: -20%;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.brain4 {
+  display: block;
+  position: absolute;
+  left: 45%;
+  top: 27%;
+  z-index: 2;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.brain4a {
+  display: block;
+  position: absolute;
+  left: 45%;
+  top: 27%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brain4:hover {
+  opacity: 0;
+}
+
+.brain4:hover ~ .core {
+  opacity: 1;
+}
+
+.core {
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  color: white;
+  font-size: 60px;
+  transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.brain5 {
+  display: block;
+  position: absolute;
+  left: 35%;
+  top: 48%;
+  z-index: 2;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.brain5a {
+  display: block;
+  position: absolute;
+  left: 35%;
+  top: 48%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brain5:hover {
+  opacity: 0;
+}
+
+.brain5:hover ~ .responsive {
+  opacity: 1;
+}
+
+.responsive {
+  position: absolute;
+  right: 15%;
+  top: 70%;
+  color: white;
+  font-size: 60px;
+  transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.responsive img {
+  width: 70px;
+  height: 60px;
+  opacity: 0.6;
+}
+
+.brain6 {
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 54%;
+  z-index: 2;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.brain6a {
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 54%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brain6:hover {
+  opacity: 0;
+}
+
+.brain6:hover ~ .languages {
+  opacity: 1;
+}
+
+.languages {
+  position: absolute;
+  right: 90%;
+  top: 80%;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+  opacity: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.fa-hubspot {
+  color: #f8751d;
+}
+
+.fa-sass {
+  color: #cd6799;
+}
+
+.fa-bootstrap {
+  color: #563c7d;
+  margin-left: 10px;
+}
+
+.fa-mobile-alt {
+  color: rgb(107, 46, 46);
+}
+
+.html5 {
+  width: 80px;
+  height: 70px;
+}
+
+.git {
+  color: #f05033;
+  width: 60px;
+  height: 60px;
+  margin-top: 20%;
+}
+
+.jira {
+  width: 80px;
+  height: 70px;
+  margin-top: 20%;
+}
+
+.css3 {
+  width: 60px;
+  height: 70px;
+}
+
+.fa-js-square {
+  color: #f7df1e;
+  font-size: 70px;
+  margin-right: 10px;
+}
+
+.fa-react {
+  color: #00d8ff;
+}
+
+.fa-php {
+  color: #8a94bf;
+}
+
+.fa-wordpress {
+  color: #207297;
+}
+
+/*skills - animation for mobile*/
+
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/*contact*/
+
+.contactp {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  width: 36%;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  text-align: justify;
+}
+
+h3 {
+  margin-top: 8%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.contactadd {
+  text-decoration: none;
+  color: white;
+}
+
+/* Animations */
+
+.animation {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 3s 1s 1 normal both;
+}
+
+.showon {
+  opacity: 0;
+  animation: show-on 3s 1s 1 normal both;
+}
+
+.showon:nth-of-type(1) {
+  animation-delay: 1s;
+}
+
+.showon:nth-of-type(2) {
+  animation-delay: 1.4s;
+}
+
+.showon:nth-of-type(3) {
+  animation-delay: 1.9s;
+}
+
+.showon:nth-of-type(4) {
+  animation-delay: 2.3s;
+}
+
+.showon:nth-of-type(5) {
+  animation-delay: 2.8s;
+}
+
+.showon:nth-of-type(6) {
+  animation-delay: 3.2s;
+}
+
+.showon:nth-of-type(7) {
+  animation-delay: 3.6s;
+}
+
+.showon:nth-of-type(8) {
+  animation-delay: 4s;
+}
+
+@keyframes show-on {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 1000px;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+/*media queries!*/
+/*from desktop 1920x1080 to mobile. desktop-first*/
+/*1600x900*/
+
+@media (max-width: 1600px) and (orientation: landscape) {
+  /*arrow above book*/
+
+  .look {
+    right: 5%;
+    top: 20%;
+  }
+
+  /*projects*/
+
+  .container-project {
+    margin: 32px;
+  }
+
+  .wrapper-projects {
+    padding-top: 8%;
+  }
+
+  .fa-bootstrap {
+    margin-left: 65px;
+  }
+}
+
+@media (max-width: 1588px) and (orientation: landscape) {
+  .mainpage p {
+    top: 30%;
+    font-size: 14px;
+  }
+
+  .look {
+    right: 4%;
+    top: 20%;
+  }
+
+  /*brain*/
+
+  h6 {
+    font-size: 20px;
+  }
+
+  .operations {
+    left: -20%;
+    top: -10%;
+  }
+
+  .soft-skills {
+    font-size: 17px;
+    right: 8%;
+    top: -5%;
+  }
+
+  .learn {
+    font-size: 50px;
+    left: -10%;
+  }
+
+  .responsive {
+    font-size: 50px;
+  }
+
+  .languages {
+    right: 75%;
+    top: 75%;
+    font-size: 17px;
+  }
+
+  .fa-bootstrap {
+    margin-left: 50px;
+  }
+
+  /*projects*/
+
+  .wrapper-projects {
+    padding-top: 3.5%;
+  }
+}
+
+/*1440 x 900 */
+@media (max-width: 1440px) and (orientation: landscape) {
+  /*about*/
+  /*book*/
+
+  .container {
+    top: 22%;
+    left: 50%;
+  }
+
+  .operations {
+    left: -15%;
+    top: -20%;
+  }
+
+  /*arrow above book*/
+
+  .look {
+    right: 6%;
+    top: 25%;
+  }
+
+  .fa-bootstrap {
+    margin-left: 60px;
+  }
+}
+
+/*1366 x 768*/
+
+@media (max-width: 1366px) and (orientation: landscape) {
+  /*about*/
+  .mainpage p {
+    font-size: 13px;
+    top: 30%;
+  }
+
+  .mainpage h1 {
+    top: 25%;
+    font-size: 30px;
+  }
+
+  /*book*/
+  .container {
+    top: 20%;
+    left: 49%;
+  }
+
+  /*arrow above book*/
+
+  .look {
+    right: 4%;
+    top: 23%;
+  }
+
+  /*brain*/
+
+  h6 {
+    font-size: 20px;
+  }
+
+  .operations {
+    left: -15%;
+    top: -12%;
+  }
+
+  .soft-skills {
+    font-size: 17px;
+    right: 8%;
+    top: -5%;
+  }
+
+  .learn {
+    font-size: 50px;
+    left: -10%;
+  }
+
+  .responsive {
+    font-size: 50px;
+  }
+
+  .languages {
+    right: 75%;
+    top: 75%;
+    font-size: 17px;
+  }
+
+  .fa-bootstrap {
+    margin-left: 50px;
+  }
+
+  /*projects*/
+
+  .wrapper-projects {
+    padding-top: 3.5%;
+  }
+}
+
+/*1280x800*/
+
+@media (max-width: 1280px) and (orientation: landscape) {
+  .wrapper-projects {
+    padding-top: 8%;
+  }
+
+  .container-project {
+    margin: 20px;
+  }
+
+  .look {
+    right: 1%;
+    top: 20%;
+  }
+}
+
+/*1024 x 768*/
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .mainpage h4 {
+    top: 45%;
+  }
+
+  .mainpage .h1-about {
+    font-size: 40px;
+  }
+
+  .mainpage p {
+    font-size: 13px;
+    line-height: 18px;
+    top: 33%;
+  }
+
+  /*BOOK PAGES*/
+
+  .container {
+    margin-top: 5%;
+    left: 25%;
+    opacity: 0.8;
+  }
+
+  .look {
+    right: 12%;
+    top: 25%;
+  }
+
+  /*brain*/
+
+  h6 {
+    font-size: 17px;
+  }
+
+  .brain {
+    height: 500px;
+    width: 600px;
+  }
+
+  .brain1 {
+    left: 20%;
+    top: 1.5%;
+  }
+
+  .brain1a {
+    left: 20%;
+    top: 1.5%;
+  }
+
+  .operations {
+    font-size: 50px;
+    left: 7%;
+    top: -20%;
+  }
+
+  .brain2 {
+    left: 55%;
+    top: 2%;
+  }
+
+  .brain2a {
+    left: 55%;
+    top: 2%;
+  }
+
+  .soft-skills {
+    font-size: 14px;
+    right: -24%;
+  }
+
+  .brain3 {
+    left: 33%;
+    top: 36%;
+  }
+
+  .brain3a {
+    left: 33%;
+    top: 36%;
+  }
+
+  .learn {
+    font-size: 40px;
+    bottom: 20%;
+    left: 10%;
+  }
+
+  .brain4 {
+    left: 74%;
+    top: 32%;
+  }
+
+  .brain4a {
+    left: 74%;
+    top: 32%;
+  }
+
+  .core {
+    right: -25%;
+    top: 58%;
+    font-size: 30px;
+  }
+
+  .brain5 {
+    left: 58%;
+    top: 57%;
+  }
+
+  .brain5a {
+    left: 58%;
+    top: 57%;
+  }
+
+  .responsive {
+    right: 5%;
+    top: 97%;
+    font-size: 35px;
+  }
+
+  .brain6 {
+    left: 42%;
+    top: 63%;
+  }
+
+  .brain6a {
+    left: 42%;
+    top: 63%;
+  }
+
+  .languages {
+    right: 60%;
+    top: 90%;
+    font-size: 14px;
+  }
+
+  .fa-bootstrap {
+    margin-left: 45px;
+  }
+
+  .html5 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .git {
+    width: 40px;
+    height: 40px;
+    margin-top: 30%;
+  }
+
+  .jira {
+    width: 100px;
+    height: 40px;
+  }
+
+  .css3 {
+    width: 40px;
+    height: 50px;
+  }
+
+  .fa-js-square {
+    font-size: 47px;
+    margin-right: 6px;
+  }
+
+  /*projects*/
+
+  .wrapper-projects {
+    padding-top: 17%;
+    justify-content: space-around;
+  }
+
+  .project {
+    width: 190px;
+    height: 170px;
+  }
+
+  .container-project {
+    margin: auto;
+    width: 200px;
+  }
+
+  .middle {
+    top: 35%;
+    left: 45%;
+  }
+}
+
+/*768x1024*/
+
+@media (max-width: 768px) and (orientation: portrait) {
+  /*main home*/
+
+  .mainpage h1 {
+    left: 15%;
+  }
+
+  .mainpage h4 {
+    left: 15%;
+  }
+
+  .btn {
+    left: 15%;
+  }
+
+  /*mainpage -> about*/
+
+  .mainpage .h1-about {
+    font-size: 30px;
+    margin-top: -35%;
+  }
+
+  .mainpage p {
+    font-size: 13px;
+    line-height: 15px;
+    width: 80%;
+    top: 13%;
+    left: 15%;
+    column-count: 2;
+    column-gap: 50px;
+  }
+
+  /*BOOK PAGES*/
+
+  .container {
+    top: 40%;
+    left: 11%;
+  }
+
+  .look {
+    position: absolute;
+    color: white;
+    right: 6%;
+    top: 42%;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+  }
+
+  .text .booktext {
+    left: 44%;
+    top: 45%;
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  /*brain*/
+
+  h6 {
+    font-size: 17px;
+  }
+
+  .operations {
+    left: -5%;
+    top: 50%;
+  }
+
+  .soft-skills {
+    font-size: 14px;
+    right: 80%;
+    top: 60%;
+  }
+
+  .learn {
+    font-size: 40px;
+    bottom: 25%;
+    left: 2%;
+  }
+
+  .core {
+    right: 80%;
+    top: 64%;
+    font-size: 40px;
+  }
+
+  .responsive {
+    right: 80%;
+    top: 64%;
+  }
+
+  .languages {
+    right: 80%;
+    top: 64%;
+    font-size: 14px;
+  }
+
+  .fa-bootstrap {
+    margin-left: 20px;
+  }
+
+  .html5 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .css3 {
+    width: 50px;
+    height: 60px;
+  }
+
+  .fa-js-square {
+    font-size: 50px;
+    margin-right: 6px;
+  }
+
+  /*projects*/
+
+  .wrapper-projects {
+    padding-top: 17%;
+    justify-content: space-around;
+  }
+
+  .container-project {
+    margin: 10px;
+    width: 200px;
+  }
+
+  /*contact*/
+
+  .contactp {
+    width: 36%;
+    position: absolute;
+    top: 15%;
+    left: 16%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 720px) and (orientation: portrait) {
+  /*main home*/
+
+  .mainpage h1 {
+    left: 13%;
+  }
+
+  .mainpage h4 {
+    left: 13%;
+  }
+
+  .btn {
+    left: 13%;
+  }
+
+  /*mainpage -> about*/
+
+  .mainpage .h1-about {
+    font-size: 30px;
+    margin-top: -35%;
+  }
+
+  .mainpage p {
+    top: 15%;
+    left: 13%;
+  }
+
+  /*BOOK PAGES*/
+
+  .container {
+    top: 45%;
+    left: 8%;
+  }
+
+  .look {
+    right: 4%;
+    top: 45%;
+  }
+
+  /*brain*/
+
+  /*projects*/
+
+  .wrapper-projects {
+    padding-top: 17%;
+    justify-content: space-around;
+  }
+
+  .container-project {
+    margin: 18px;
+    width: 250px;
+  }
+
+  /*contact*/
+
+  .contactp {
+    left: 13%;
+  }
+}
+
+/*mobile*/
+
+/*480x800px*/
+
+@media (max-width: 480px) and (orientation: portrait) {
+  .sidebar {
+    display: none;
+  }
+
+  .hamburger-menu.aside {
+    left: 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    left: -100px;
+    transition: 0.4s;
+    height: 100vh;
+    width: 100px;
+    background-color: black;
+    z-index: 100;
+    color: rgb(17, 17, 17);
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .navmobile {
+    margin-top: 150px;
+    margin-left: 33px;
+  }
+
+  .navmobile i {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .navmobile i:hover {
+    opacity: 1;
+  }
+
+  #nav-icon1 {
+    display: block;
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    margin: 10px 23px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: rgb(94, 59, 128);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  #nav-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+
+  #nav-icon1 span:nth-child(2) {
+    top: 18px;
+  }
+
+  #nav-icon1 span:nth-child(3) {
+    top: 36px;
+  }
+
+  #nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+  }
+
+  #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+
+  #nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+  }
+
+  /*home*/
+
+  .mainpage h1 {
+    left: 22%;
+    font-size: 30px;
+  }
+
+  .mainpage h4 {
+    left: 22%;
+  }
+
+  .mobilebr {
+    display: block;
+  }
+
+  .btn {
+    left: 22%;
+  }
+
+  /*about me*/
+
+  .mainpage .h1-about {
+    color: rgb(151, 104, 196);
+    font-size: 40px;
+    margin-top: -45%;
+  }
+
+  .mainpage p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 80%;
+    top: 17%;
+    left: 10%;
+    column-count: 1;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .look {
+    display: none;
+  }
+
+  /*brain mainpage skills*/
+
+  .brain {
+    height: 500px;
+    width: 100%;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  .brain1 {
+    display: none;
+  }
+
+  .brain1a {
+    display: none;
+  }
+
+  .operations {
+    font-size: 50px;
+    left: 30%;
+    top: 110%;
+    opacity: 1;
+    animation: swirl-in-fwd 5s linear both;
+  }
+
+  .brain2 {
+    display: none;
+  }
+
+  .brain2a {
+    display: none;
+  }
+
+  .soft-skills {
+    position: absolute;
+    font-size: 14px;
+    width: 100px;
+    right: 65%;
+    top: 30%;
+    opacity: 1;
+    animation: swirl-in-fwd 3s linear both;
+  }
+
+  .brain3 {
+    display: none;
+  }
+
+  .brain3a {
+    display: none;
+  }
+
+  .learn {
+    font-size: 40px;
+    bottom: 30%;
+    left: 55%;
+    opacity: 1;
+    animation: swirl-in-fwd 3.5s linear both;
+  }
+
+  .brain4 {
+    display: none;
+  }
+
+  .brain4a {
+    display: none;
+  }
+
+  .core {
+    right: 30%;
+    top: 5%;
+    font-size: 60px;
+    opacity: 1;
+    animation: swirl-in-fwd 2.5s linear both;
+  }
+
+  .brain5 {
+    display: none;
+  }
+
+  .brain5a {
+    display: none;
+  }
+
+  .responsive {
+    right: 35%;
+    top: 80%;
+    font-size: 60px;
+    opacity: 1;
+    animation: swirl-in-fwd 4s linear both;
+  }
+
+  .brain6 {
+    display: none;
+  }
+
+  .brain6a {
+    display: none;
+  }
+
+  .languages {
+    right: 15%;
+    top: 30%;
+    text-align: center;
+    width: 100px;
+    font-size: 14px;
+    opacity: 1;
+    animation: swirl-in-fwd 3s linear both;
+  }
+
+  .skillsshow {
+    display: none;
+  }
+
+  .fa-bootstrap {
+    margin-left: 10px;
+  }
+
+  .git {
+    width: 50px;
+    height: 50px;
+    margin-top: 20%;
+  }
+
+  .jira {
+    height: 50px;
+  }
+
+  /*projects*/
+  .mainpageskills {
+    height: auto;
+  }
+
+  .contactp {
+    top: 25%;
+    left: 22%;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  .navmobile i {
+    font-size: 21px;
+    margin-top: 0px;
+  }
+
+  #nav-icon1 span {
+    height: 5px;
+    width: 90%;
+  }
+
+  .mainpage h1 {
+    left: 27%;
+    font-size: 24px;
+  }
+
+  .mainpage h4 {
+    left: 27%;
+  }
+
+  .btn {
+    left: 27%;
+  }
+
+  /*about me*/
+
+  .mainpage .h1-about {
+    color: rgb(151, 104, 196);
+    font-size: 40px;
+    margin-top: -47%;
+  }
+
+  .mainpage p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /*brain mainpage skills*/
+
+  .operations {
+    font-size: 40px;
+    left: 40%;
+    top: 105%;
+  }
+
+  .soft-skills {
+    font-size: 13px;
+    right: 45%;
+    top: 40%;
+  }
+
+  .learn {
+    font-size: 30px;
+    bottom: 25%;
+    left: 68%;
+  }
+
+  .core {
+    right: 10%;
+    top: 15%;
+  }
+
+  .responsive {
+    right: 18%;
+    top: 90%;
+    font-size: 30px;
+  }
+
+  .languages {
+    top: 40%;
+    right: 2%;
+    font-size: 13px;
+  }
+
+  .fa-bootstrap {
+    margin-left: 40px;
+  }
+
+  .git {
+    width: 40px;
+    height: 40px;
+  }
+
+  .jira {
+    height: 40px;
+  }
+
+  /*projects*/
+  .mainpageskills {
+    height: auto;
+  }
+
+  .contactp {
+    top: 25%;
+    left: 22%;
+  }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+  .operations {
+    left: 45%;
+    top: 102%;
+  }
+
+  .soft-skills {
+    font-size: 13px;
+    right: 35%;
+    top: 43%;
+  }
+
+  .learn {
+    font-size: 25px;
+    bottom: 22%;
+    left: 68%;
+  }
+
+  .core {
+    right: 5%;
+    top: 15%;
+  }
+
+  .responsive {
+    right: 13%;
+    top: 90%;
+    font-size: 30px;
+  }
+
+  .languages {
+    top: 43%;
+  }
+
+  .contactp {
+    top: 25%;
+    left: 27%;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  .navmobile {
+    margin-top: 10px;
+  }
+
+  .navmobile i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  li:nth-last-of-type(2) {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+
+  #nav-icon1 span {
+    height: 5px;
+    width: 90%;
+    left: 450%;
+  }
+
+  /*home*/
+
+  .mainpage h1 {
+    font-size: 20px;
+  }
+
+  /*about me*/
+
+  .mainpage .h1-about {
+    font-size: 30px;
+    margin-top: -45%;
+  }
+
+  .mainpage p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /*brain mainpage skills*/
+
+  .operations {
+    left: 50%;
+    top: 95%;
+  }
+
+  .html5 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .css3 {
+    width: 40px;
+    height: 50px;
+  }
+
+  .fa-js-square {
+    color: #f7df1e;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+
+  .soft-skills {
+    font-size: 12px;
+    right: 30%;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .learn {
+    font-size: 18px;
+    bottom: 25%;
+    left: 77%;
+  }
+
+  .core {
+    right: 0%;
+    top: 25%;
+  }
+
+  .responsive {
+    right: 10%;
+    top: 80%;
+    font-size: 30px;
+  }
+
+  .languages {
+    top: 43%;
+    right: -10%;
+    font-size: 13px;
+  }
+
+  .fa-bootstrap {
+    margin-left: 30px;
+  }
+
+  .git {
+    width: 20px;
+    height: 20px;
+  }
+
+  .jira {
+    height: 25px;
+  }
+
+  /*projects*/
+  .mainpageskills {
+    height: auto;
+  }
+
+  .contactp {
+    top: 25%;
+    left: 22%;
+  }
+}
