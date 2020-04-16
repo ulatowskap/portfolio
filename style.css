@@ -645,6 +645,14 @@ hr {
   opacity: 0.6;
 }
 
+.fa-vuejs {
+  color: #3eb37f;
+}
+
+.fa-node-js {
+  color: #3eb37f;
+}
+
 .brain6 {
   display: block;
   position: absolute;
